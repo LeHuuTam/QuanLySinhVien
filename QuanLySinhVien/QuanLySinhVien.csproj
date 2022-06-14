@@ -56,13 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangNhap.cs" />
-    <Compile Include="DAO\BLGiangVien.cs" />
-    <Compile Include="DAO\BLLop.cs" />
-    <Compile Include="DAO\DB.cs" />
-    <Compile Include="DAO\BLKhoa.cs" />
-    <Compile Include="DAO\BLMonHoc.cs" />
-    <Compile Include="DAO\BLSinhVien.cs" />
-    <Compile Include="DAO\BLTaiKhoan.cs" />
+    <Compile Include="Business\BLGiangVien.cs" />
+    <Compile Include="Business\BLLop.cs" />
+    <Compile Include="Business\BLKhoa.cs" />
+    <Compile Include="Business\BLMonHoc.cs" />
+    <Compile Include="Business\BLSinhVien.cs" />
+    <Compile Include="Business\BLTaiKhoan.cs" />
     <Compile Include="Data\Diem.cs" />
     <Compile Include="Data\GiangVien.cs" />
     <Compile Include="Data\Khoa.cs" />
@@ -142,6 +141,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

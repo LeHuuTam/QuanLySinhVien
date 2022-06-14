@@ -1,13 +1,6 @@
-﻿using QuanLySinhVien.DAO;
+﻿using QuanLySinhVien.Business;
 using QuanLySinhVien.Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -27,8 +20,10 @@ namespace QuanLySinhVien
         private void FrmLop_GV_Load(object sender, EventArgs e)
         {
             GiangVien gv = new GiangVien();
-            gv = BLGiangVien.LayGV(DangNhap.TenDN);
-            var mons = BLMonHoc.LayMon(gv.MaKhoa);
+            var blgv = new BLGiangVien();
+            var blmh = new BLMonHoc();
+            gv = blgv.LayGV(DangNhap.TenDN);
+            var mons = blmh.LayMon(gv.MaKhoa);
 
             cbMon.DataSource = mons;
             cbMon.DisplayMember = "TenMon";
@@ -37,7 +32,8 @@ namespace QuanLySinhVien
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            dgvLop.DataSource = BLLop.LayLop(cbMon.SelectedValue.ToString());
+            var blLop = new BLLop();
+            dgvLop.DataSource = blLop.LayLop(cbMon.SelectedValue.ToString());
         }
     }
 }

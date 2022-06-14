@@ -1,12 +1,5 @@
-﻿using QuanLySinhVien.DAO;
+﻿using QuanLySinhVien.Business;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -25,12 +18,13 @@ namespace QuanLySinhVien
 
         private void FrmSinhVien_GV_Load(object sender, EventArgs e)
         {
-            dgvSV.DataSource = BLSinhVien.LaySinhVien();
+            //dgvSV.DataSource = BLSinhVien.LaySinhVien();
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            dgvSV.DataSource = BLSinhVien.TimSinhVien(txbTim.Text.Trim());
+            var blsv = new BLSinhVien();
+            dgvSV.DataSource = blsv.TimSinhVien(txbTim.Text.Trim());
         }
     }
 }

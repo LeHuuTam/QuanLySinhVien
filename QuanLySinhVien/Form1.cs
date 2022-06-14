@@ -1,12 +1,5 @@
-﻿using QuanLySinhVien.DAO;
+﻿using QuanLySinhVien.Business;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -26,7 +19,8 @@ namespace QuanLySinhVien
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             bool check = false;
-            var tk = BLTaiKhoan.LayTaiKhoan(txbTenDN.Text.Trim(), txbMatKhau.Text.Trim());
+            var bltk = new BLTaiKhoan();
+            var tk = bltk.LayTaiKhoan(txbTenDN.Text.Trim(), txbMatKhau.Text.Trim());
             if (tk != null)
             {
                 if (rbQuanTri.Checked)
@@ -63,6 +57,8 @@ namespace QuanLySinhVien
         private void Form1_Load(object sender, EventArgs e)
         {
             rbQuanTri.Checked = true;
+            txbTenDN.Text = "giangvien";
+            txbMatKhau.Text = "123";
         }
     }
 }
