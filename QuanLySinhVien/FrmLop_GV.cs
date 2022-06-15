@@ -1,6 +1,7 @@
 ﻿using QuanLySinhVien.Business;
 using QuanLySinhVien.Data;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -33,7 +34,17 @@ namespace QuanLySinhVien
         private void btnOK_Click(object sender, EventArgs e)
         {
             var blLop = new BLLop();
-            dgvLop.DataSource = blLop.LayLop(cbMon.SelectedValue.ToString());
+            List<object> listLop = new List<object>();
+            foreach (var i in blLop.LayLop(cbMon.SelectedValue.ToString()))
+            {
+                listLop.Add(new
+                {
+                    MaLop = i.MaLop,
+                    NgayBatDau = i.NgayBatDau,
+                    NgayKetThuc = i.NgayKetThuc
+                });
+            }
+            dgvLop.DataSource = listLop;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace QuanLySinhVien.Business
         }
         public List<MonHoc> LayMon(string maKhoa)
         {
-            return db.MonHocs.Where(x => x.MaKhoa == maKhoa).ToList();
+            return  db.MonHocs.Where(x => x.MaKhoa == maKhoa).ToList();
         }
     }
 }
