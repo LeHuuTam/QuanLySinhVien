@@ -77,6 +77,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCrudGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudGV.Designer.cs">
+      <DependentUpon>FrmCrudGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrudMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudMonHoc.Designer.cs">
+      <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrudSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudSV.Designer.cs">
+      <DependentUpon>FrmCrudSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLop_GV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudGV.resx">
+      <DependentUpon>FrmCrudGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudMonHoc.resx">
+      <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudSV.resx">
+      <DependentUpon>FrmCrudSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLop_GV.resx">
       <DependentUpon>FrmLop_GV.cs</DependentUpon>

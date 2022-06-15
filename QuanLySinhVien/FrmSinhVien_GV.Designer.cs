@@ -45,7 +45,7 @@ namespace QuanLySinhVien
             // txbTim
             // 
             this.txbTim.Location = new System.Drawing.Point(37, 26);
-            this.txbTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTim.Margin = new System.Windows.Forms.Padding(4);
             this.txbTim.Name = "txbTim";
             this.txbTim.Size = new System.Drawing.Size(293, 22);
             this.txbTim.TabIndex = 0;
@@ -55,7 +55,7 @@ namespace QuanLySinhVien
             this.btnTim.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.Location = new System.Drawing.Point(369, 18);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(4);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(154, 33);
             this.btnTim.TabIndex = 1;
@@ -65,8 +65,7 @@ namespace QuanLySinhVien
             // 
             // dgvSV
             // 
-            this.dgvSV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -75,9 +74,9 @@ namespace QuanLySinhVien
             this.Column4,
             this.Column5});
             this.dgvSV.Location = new System.Drawing.Point(37, 68);
-            this.dgvSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSV.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSV.Name = "dgvSV";
-            this.dgvSV.RowHeadersWidth = 51;
+            this.dgvSV.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dgvSV.Size = new System.Drawing.Size(888, 398);
             this.dgvSV.TabIndex = 2;
             // 
@@ -88,7 +87,6 @@ namespace QuanLySinhVien
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -97,7 +95,6 @@ namespace QuanLySinhVien
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
             // 
             // Column3
             // 
@@ -106,7 +103,6 @@ namespace QuanLySinhVien
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 125;
             // 
             // Column4
             // 
@@ -115,7 +111,6 @@ namespace QuanLySinhVien
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
             // 
             // Column5
             // 
@@ -124,14 +119,13 @@ namespace QuanLySinhVien
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 125;
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Crimson;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(787, 484);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(138, 46);
             this.btnThoat.TabIndex = 3;
@@ -150,7 +144,7 @@ namespace QuanLySinhVien
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.txbTim);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSinhVien_GV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sinh viên";

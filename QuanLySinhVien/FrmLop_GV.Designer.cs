@@ -41,13 +41,10 @@ namespace QuanLySinhVien
             this.label1 = new System.Windows.Forms.Label();
             this.cbMon = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.DSSV_view = new System.Windows.Forms.DataGridView();
-            //this.quanLySinhVienDataSet = new QuanLySinhVien.QuanLySinhVienDataSet();
-            this.quanLySinhVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_SelectSV = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DSSV_view = new System.Windows.Forms.DataGridView();
             this.Col_MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_Gender = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -56,12 +53,13 @@ namespace QuanLySinhVien
             this.Col_GiuaKi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_CuoiKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_TB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quanLySinhVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnThoat = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSSV_view)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.quanLySinhVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLySinhVienDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +70,7 @@ namespace QuanLySinhVien
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(803, 524);
@@ -85,9 +83,9 @@ namespace QuanLySinhVien
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.cbMon);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(795, 495);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách lớp";
@@ -98,7 +96,7 @@ namespace QuanLySinhVien
             this.btnOK.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(323, 24);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(121, 33);
             this.btnOK.TabIndex = 1;
@@ -108,13 +106,14 @@ namespace QuanLySinhVien
             // 
             // dgvLop
             // 
+            this.dgvLop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
             this.dgvLop.Location = new System.Drawing.Point(12, 69);
-            this.dgvLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvLop.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLop.Name = "dgvLop";
             this.dgvLop.RowHeadersWidth = 51;
             this.dgvLop.Size = new System.Drawing.Size(787, 305);
@@ -127,7 +126,6 @@ namespace QuanLySinhVien
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -136,7 +134,6 @@ namespace QuanLySinhVien
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
             // 
             // Column3
             // 
@@ -145,7 +142,6 @@ namespace QuanLySinhVien
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 125;
             // 
             // label1
             // 
@@ -162,7 +158,7 @@ namespace QuanLySinhVien
             // 
             this.cbMon.FormattingEnabled = true;
             this.cbMon.Location = new System.Drawing.Point(144, 28);
-            this.cbMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMon.Margin = new System.Windows.Forms.Padding(4);
             this.cbMon.Name = "cbMon";
             this.cbMon.Size = new System.Drawing.Size(160, 24);
             this.cbMon.TabIndex = 0;
@@ -174,24 +170,42 @@ namespace QuanLySinhVien
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.DSSV_view);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(795, 495);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách sinh viên";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnThoat
+            // btn_SelectSV
             // 
-            this.btnThoat.Location = new System.Drawing.Point(800, 570);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(100, 28);
-            this.btnThoat.TabIndex = 3;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btn_SelectSV.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SelectSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SelectSV.Location = new System.Drawing.Point(460, 22);
+            this.btn_SelectSV.Name = "btn_SelectSV";
+            this.btn_SelectSV.Size = new System.Drawing.Size(114, 33);
+            this.btn_SelectSV.TabIndex = 3;
+            this.btn_SelectSV.Text = "OK";
+            this.btn_SelectSV.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(155, 26);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(264, 24);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Chọn sinh viên";
             // 
             // DSSV_view
             // 
@@ -216,45 +230,6 @@ namespace QuanLySinhVien
             this.DSSV_view.Size = new System.Drawing.Size(795, 412);
             this.DSSV_view.TabIndex = 0;
             // 
-            // quanLySinhVienDataSet
-            // 
-            //this.quanLySinhVienDataSet.DataSetName = "QuanLySinhVienDataSet";
-            //this.quanLySinhVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            //// 
-            // quanLySinhVienDataSetBindingSource
-            // 
-            //this.quanLySinhVienDataSetBindingSource.DataSource = this.quanLySinhVienDataSet;
-            this.quanLySinhVienDataSetBindingSource.Position = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Chọn sinh viên";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(155, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(264, 24);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // btn_SelectSV
-            // 
-            this.btn_SelectSV.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_SelectSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SelectSV.Location = new System.Drawing.Point(460, 22);
-            this.btn_SelectSV.Name = "btn_SelectSV";
-            this.btn_SelectSV.Size = new System.Drawing.Size(114, 33);
-            this.btn_SelectSV.TabIndex = 3;
-            this.btn_SelectSV.Text = "OK";
-            this.btn_SelectSV.UseVisualStyleBackColor = false;
-            // 
             // Col_MaSV
             // 
             this.Col_MaSV.HeaderText = "Mã Sinh Viên";
@@ -271,7 +246,7 @@ namespace QuanLySinhVien
             this.Col_HoTen.MaxInputLength = 50;
             this.Col_HoTen.MinimumWidth = 6;
             this.Col_HoTen.Name = "Col_HoTen";
-            this.Col_HoTen.Width = 88;
+            this.Col_HoTen.Width = 62;
             // 
             // Col_Gender
             // 
@@ -287,7 +262,7 @@ namespace QuanLySinhVien
             this.Col_DateOfB.MaxInputLength = 12;
             this.Col_DateOfB.MinimumWidth = 6;
             this.Col_DateOfB.Name = "Col_DateOfB";
-            this.Col_DateOfB.Width = 102;
+            this.Col_DateOfB.Width = 94;
             // 
             // Col_Khoa
             // 
@@ -321,6 +296,17 @@ namespace QuanLySinhVien
             this.Col_TB.Name = "Col_TB";
             this.Col_TB.Width = 60;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(800, 570);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(100, 28);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // FrmLop_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -330,7 +316,7 @@ namespace QuanLySinhVien
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLop_GV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lớp";
@@ -343,7 +329,6 @@ namespace QuanLySinhVien
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSSV_view)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.quanLySinhVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLySinhVienDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
