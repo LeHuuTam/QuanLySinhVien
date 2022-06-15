@@ -1,5 +1,6 @@
 ﻿using QuanLySinhVien.Business;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -27,10 +28,19 @@ namespace QuanLySinhVien
 
         private void btnXem_Click(object sender, EventArgs e)
         {
-            //var tb = MonHocDAO.LayMon(cbKhoa.SelectedValue.ToString());
             var blMon = new BLMonHoc();
-            dgvMon.DataSource = blMon.LayMon(cbKhoa.SelectedValue.ToString());
-            //dgvMon.DataSource = tb;
+            List<object> list = new List<object>();
+            foreach (var i in blMon.LayMon(cbKhoa.SelectedValue.ToString()))
+            {
+
+                list.Add(new
+                { 
+                    MaMon = i.MaMon,
+                    TenMon = i.TenMon,
+                    SoTinChi = i.SoTinChi
+                });
+            }
+            dgvMon.DataSource = list;
         }
     }
 }

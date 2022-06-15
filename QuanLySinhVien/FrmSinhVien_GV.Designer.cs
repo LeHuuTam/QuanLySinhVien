@@ -44,20 +44,18 @@ namespace QuanLySinhVien
             // 
             // txbTim
             // 
-            this.txbTim.Location = new System.Drawing.Point(37, 26);
-            this.txbTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTim.Location = new System.Drawing.Point(28, 21);
             this.txbTim.Name = "txbTim";
-            this.txbTim.Size = new System.Drawing.Size(293, 22);
+            this.txbTim.Size = new System.Drawing.Size(221, 20);
             this.txbTim.TabIndex = 0;
             // 
             // btnTim
             // 
             this.btnTim.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(369, 18);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTim.Location = new System.Drawing.Point(277, 15);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(154, 33);
+            this.btnTim.Size = new System.Drawing.Size(116, 27);
             this.btnTim.TabIndex = 1;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = false;
@@ -74,11 +72,10 @@ namespace QuanLySinhVien
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dgvSV.Location = new System.Drawing.Point(37, 68);
-            this.dgvSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSV.Location = new System.Drawing.Point(28, 53);
             this.dgvSV.Name = "dgvSV";
             this.dgvSV.RowHeadersWidth = 51;
-            this.dgvSV.Size = new System.Drawing.Size(888, 398);
+            this.dgvSV.Size = new System.Drawing.Size(666, 323);
             this.dgvSV.TabIndex = 2;
             // 
             // Column1
@@ -130,10 +127,9 @@ namespace QuanLySinhVien
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Crimson;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(787, 484);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Location = new System.Drawing.Point(590, 393);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(138, 46);
+            this.btnThoat.Size = new System.Drawing.Size(104, 37);
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -141,16 +137,15 @@ namespace QuanLySinhVien
             // 
             // FrmSinhVien_GV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(956, 554);
+            this.ClientSize = new System.Drawing.Size(717, 450);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dgvSV);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.txbTim);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmSinhVien_GV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sinh viên";
