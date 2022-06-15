@@ -33,10 +33,10 @@ namespace QuanLySinhVien
             this.label1 = new System.Windows.Forms.Label();
             this.btnXem = new System.Windows.Forms.Button();
             this.dgvMon = new System.Windows.Forms.DataGridView();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.ColMaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColSoTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,16 +81,6 @@ namespace QuanLySinhVien
             this.dgvMon.Size = new System.Drawing.Size(323, 187);
             this.dgvMon.TabIndex = 3;
             // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(277, 262);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 4;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // ColMaMon
             // 
             this.ColMaMon.DataPropertyName = "MaMon";
@@ -111,6 +101,16 @@ namespace QuanLySinhVien
             this.ColSoTC.HeaderText = "Số tín chỉ";
             this.ColSoTC.Name = "ColSoTC";
             this.ColSoTC.ReadOnly = true;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(277, 262);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 4;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FrmMonHoc
             // 
