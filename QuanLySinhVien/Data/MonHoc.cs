@@ -13,7 +13,6 @@ namespace QuanLySinhVien.Data
         public MonHoc()
         {
             Lops = new HashSet<Lop>();
-            GiangViens = new HashSet<GiangVien>();
         }
 
         [Key]
@@ -34,8 +33,5 @@ namespace QuanLySinhVien.Data
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Lop> Lops { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GiangVien> GiangViens { get; set; }
     }
 }

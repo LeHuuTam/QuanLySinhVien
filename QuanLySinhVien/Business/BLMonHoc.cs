@@ -18,5 +18,9 @@ namespace QuanLySinhVien.Business
         {
             return  db.MonHocs.Where(x => x.MaKhoa == maKhoa).ToList();
         }
+        public List<MonHoc> LayMon()
+        {
+            return db.MonHocs.ToList();
+        }
     }
 }

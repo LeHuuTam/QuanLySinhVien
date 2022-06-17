@@ -43,11 +43,6 @@ namespace QuanLySinhVien.Data
                 .Property(e => e.MaKhoa)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<GiangVien>()
-                .HasMany(e => e.MonHocs)
-                .WithMany(e => e.GiangViens)
-                .Map(m => m.ToTable("GiangDay").MapLeftKey("MaGV").MapRightKey("MaMon"));
-
             modelBuilder.Entity<Khoa>()
                 .Property(e => e.MaKhoa)
                 .IsUnicode(false);
@@ -73,6 +68,10 @@ namespace QuanLySinhVien.Data
 
             modelBuilder.Entity<Lop>()
                 .Property(e => e.MaMon)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Lop>()
+                .Property(e => e.MaGV)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Lop>()

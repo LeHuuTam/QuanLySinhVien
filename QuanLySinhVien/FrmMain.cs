@@ -41,9 +41,29 @@ namespace QuanLySinhVien
             this.Show();
         }
 
-        private void quảnTrịSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
+        private void giảngViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCrudGV frm = new FrmCrudGV();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void sinhViênToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmCrudSV frm = new FrmCrudSV();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void MonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCrudMonHoc frm = new FrmCrudMonHoc();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
     }
 }
