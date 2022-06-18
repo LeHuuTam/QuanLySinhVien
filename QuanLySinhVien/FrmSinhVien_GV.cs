@@ -21,10 +21,12 @@ namespace QuanLySinhVien
 
         private void FrmSinhVien_GV_Load(object sender, EventArgs e)
         {
+
             List<object> listSV = new List<object>();
             foreach (var i in blsv.LaySinhVien())
             {
                 listSV.Add(new
+
                 {
                     MaSV = i.MaSV,
                     HoTen = i.HoTen,
@@ -34,10 +36,12 @@ namespace QuanLySinhVien
                 });
             }
             dgvSV.DataSource = listSV;
+
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+
             List<object> listSV = new List<object>();
             foreach (var i in blsv.TimSinhVien(txbTim.Text.Trim()))
             {
@@ -51,6 +55,7 @@ namespace QuanLySinhVien
                 });
             }
             dgvSV.DataSource = listSV;
+
         }
     }
 }

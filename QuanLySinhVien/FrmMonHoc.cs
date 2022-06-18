@@ -29,6 +29,7 @@ namespace QuanLySinhVien
         private void btnXem_Click(object sender, EventArgs e)
         {
             var blMon = new BLMonHoc();
+
             List<object> listMon = new List<object>();
             foreach (var item in blMon.LayMon(cbKhoa.SelectedValue.ToString()))
             {
@@ -38,6 +39,7 @@ namespace QuanLySinhVien
                     SoTinChi = item.SoTinChi});
             }
             dgvMon.DataSource = listMon;
+
         }
     }
 }
