@@ -29,18 +29,17 @@ namespace QuanLySinhVien
         private void btnXem_Click(object sender, EventArgs e)
         {
             var blMon = new BLMonHoc();
-            List<object> list = new List<object>();
-            foreach (var i in blMon.LayMon(cbKhoa.SelectedValue.ToString()))
-            {
 
-                list.Add(new
-                { 
-                    MaMon = i.MaMon,
-                    TenMon = i.TenMon,
-                    SoTinChi = i.SoTinChi
-                });
+            List<object> listMon = new List<object>();
+            foreach (var item in blMon.LayMon(cbKhoa.SelectedValue.ToString()))
+            {
+                listMon.Add(new { 
+                    MaMon = item.MaMon,
+                    TenMon = item.TenMon,
+                    SoTinChi = item.SoTinChi});
             }
-            dgvMon.DataSource = list;
+            dgvMon.DataSource = listMon;
+
         }
     }
 }

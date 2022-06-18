@@ -29,8 +29,13 @@ namespace QuanLySinhVien.Data
         [Column(TypeName = "date")]
         public DateTime? NgayBatDau { get; set; }
 
+        [StringLength(20)]
+        public string MaGV { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Diem> Diems { get; set; }
+
+        public virtual GiangVien GiangVien { get; set; }
 
         public virtual MonHoc MonHoc { get; set; }
     }

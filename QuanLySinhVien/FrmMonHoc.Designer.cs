@@ -44,7 +44,8 @@ namespace QuanLySinhVien
             // cbKhoa
             // 
             this.cbKhoa.FormattingEnabled = true;
-            this.cbKhoa.Location = new System.Drawing.Point(117, 23);
+            this.cbKhoa.Location = new System.Drawing.Point(156, 28);
+            this.cbKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cbKhoa.Name = "cbKhoa";
             this.cbKhoa.Size = new System.Drawing.Size(121, 21);
             this.cbKhoa.TabIndex = 0;
@@ -63,7 +64,9 @@ namespace QuanLySinhVien
             // 
             this.btnXem.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Location = new System.Drawing.Point(277, 21);
+
+            this.btnXem.Location = new System.Drawing.Point(369, 26);
+            this.btnXem.Margin = new System.Windows.Forms.Padding(4);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(75, 28);
             this.btnXem.TabIndex = 2;
@@ -76,16 +79,20 @@ namespace QuanLySinhVien
             this.dgvMon.AllowUserToDeleteRows = false;
             this.dgvMon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColMaMon,
             this.ColTenMon,
             this.ColSoTC});
-            this.dgvMon.Location = new System.Drawing.Point(27, 55);
+
+            this.dgvMon.Location = new System.Drawing.Point(39, 68);
+            this.dgvMon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.RowHeadersWidth = 51;
-            this.dgvMon.Size = new System.Drawing.Size(426, 187);
+            this.dgvMon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dgvMon.Size = new System.Drawing.Size(431, 230);
+
             this.dgvMon.TabIndex = 3;
             // 
             // ColMaMon
@@ -95,7 +102,6 @@ namespace QuanLySinhVien
             this.ColMaMon.MinimumWidth = 6;
             this.ColMaMon.Name = "ColMaMon";
             this.ColMaMon.ReadOnly = true;
-            this.ColMaMon.Width = 125;
             // 
             // ColTenMon
             // 
@@ -104,7 +110,6 @@ namespace QuanLySinhVien
             this.ColTenMon.MinimumWidth = 6;
             this.ColTenMon.Name = "ColTenMon";
             this.ColTenMon.ReadOnly = true;
-            this.ColTenMon.Width = 125;
             // 
             // ColSoTC
             // 
@@ -113,13 +118,14 @@ namespace QuanLySinhVien
             this.ColSoTC.MinimumWidth = 6;
             this.ColSoTC.Name = "ColSoTC";
             this.ColSoTC.ReadOnly = true;
-            this.ColSoTC.Width = 125;
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Crimson;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(392, 261);
+
+            this.btnThoat.Location = new System.Drawing.Point(350, 322);
+
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(61, 24);
             this.btnThoat.TabIndex = 4;
@@ -139,6 +145,9 @@ namespace QuanLySinhVien
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbKhoa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+
+            this.Margin = new System.Windows.Forms.Padding(4);
+
             this.Name = "FrmMonHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Môn học";

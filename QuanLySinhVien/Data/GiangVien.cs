@@ -12,7 +12,7 @@ namespace QuanLySinhVien.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public GiangVien()
         {
-            MonHocs = new HashSet<MonHoc>();
+            Lops = new HashSet<Lop>();
         }
 
         [Key]
@@ -40,6 +40,6 @@ namespace QuanLySinhVien.Data
         public virtual TaiKhoan TaiKhoan { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MonHoc> MonHocs { get; set; }
+        public virtual ICollection<Lop> Lops { get; set; }
     }
 }

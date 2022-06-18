@@ -14,9 +14,13 @@ namespace QuanLySinhVien.Business
         {
             db = new QuanLySinhVienDbContext();
         }
-        public List<Data.Khoa> LayKhoa()
+        public List<Khoa> LayKhoa()
         {
             return db.Khoas.ToList();
+        }
+        public string LayMaKhoa(string tenKhoa)
+        {
+            return db.Khoas.Where(x => x.TenKhoa == tenKhoa).FirstOrDefault().MaKhoa;
         }
     }
 }

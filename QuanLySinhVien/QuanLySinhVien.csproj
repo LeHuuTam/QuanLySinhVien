@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\BLDiem.cs" />
     <Compile Include="DangNhap.cs" />
     <Compile Include="Business\BLGiangVien.cs" />
     <Compile Include="Business\BLLop.cs" />
@@ -76,6 +77,24 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrudGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudGV.Designer.cs">
+      <DependentUpon>FrmCrudGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrudMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudMonHoc.Designer.cs">
+      <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrudSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrudSV.Designer.cs">
+      <DependentUpon>FrmCrudSV.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLop_GV.cs">
       <SubType>Form</SubType>
@@ -105,6 +124,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudGV.resx">
+      <DependentUpon>FrmCrudGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudMonHoc.resx">
+      <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrudSV.resx">
+      <DependentUpon>FrmCrudSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLop_GV.resx">
       <DependentUpon>FrmLop_GV.cs</DependentUpon>
@@ -143,6 +171,35 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

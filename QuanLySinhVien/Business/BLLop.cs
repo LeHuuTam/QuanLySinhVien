@@ -18,5 +18,26 @@ namespace QuanLySinhVien.Business
         {
             return db.Lops.Where(x => x.MaMon == maMon).ToList();
         }
+        public List<Lop> LayLopTheoGV(string maGV)
+        {
+            return db.Lops.Where(x => x.MaGV == maGV).ToList();
+        }
+        public bool XoaGVLop(string maGV)
+        {
+            try
+            {
+                var listLop = db.Lops.Where(x => x.MaGV == maGV).ToList();
+                foreach (var i in listLop)
+                {
+                    i.MaGV = null;
+                }
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

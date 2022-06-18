@@ -7,9 +7,11 @@ namespace QuanLySinhVien
 {
     public partial class FrmSinhVien_GV : Form
     {
+        BLSinhVien blsv;
         public FrmSinhVien_GV()
         {
             InitializeComponent();
+            blsv = new BLSinhVien();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -19,39 +21,41 @@ namespace QuanLySinhVien
 
         private void FrmSinhVien_GV_Load(object sender, EventArgs e)
         {
-            var blsv = new BLSinhVien();
-            List<object> list = new List<object>();
+
+            List<object> listSV = new List<object>();
             foreach (var i in blsv.LaySinhVien())
             {
-                list.Add(new
+                listSV.Add(new
+
                 {
                     MaSV = i.MaSV,
                     HoTen = i.HoTen,
                     GioiTinh = i.GioiTinh,
                     NgaySinh = i.NgaySinh,
-                    MaKhoa = i.MaKhoa
+                    MaKhoa = i.Khoa.TenKhoa
                 });
             }
-            dgvSV.DataSource = list;
-            //dgvSV.DataSource = BLSinhVien.LaySinhVien();
+            dgvSV.DataSource = listSV;
+
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            var blsv = new BLSinhVien();
-            List<object> list = new List<object>();
+
+            List<object> listSV = new List<object>();
             foreach (var i in blsv.TimSinhVien(txbTim.Text.Trim()))
             {
-                list.Add(new
+                listSV.Add(new
                 {
                     MaSV = i.MaSV,
                     HoTen = i.HoTen,
                     GioiTinh = i.GioiTinh,
                     NgaySinh = i.NgaySinh,
-                    MaKhoa = i.MaKhoa
+                    MaKhoa = i.Khoa.TenKhoa
                 });
             }
-            dgvSV.DataSource = list;
+            dgvSV.DataSource = listSV;
+
         }
     }
 }
