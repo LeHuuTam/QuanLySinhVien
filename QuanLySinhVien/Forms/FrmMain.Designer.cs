@@ -73,28 +73,28 @@ namespace QuanLySinhVien
             // giảngViênToolStripMenuItem1
             // 
             this.giảngViênToolStripMenuItem1.Name = "giảngViênToolStripMenuItem1";
-            this.giảngViênToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.giảngViênToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
             this.giảngViênToolStripMenuItem1.Text = "Giảng viên";
             this.giảngViênToolStripMenuItem1.Click += new System.EventHandler(this.giảngViênToolStripMenuItem1_Click);
             // 
             // sinhViênToolStripMenuItem2
             // 
             this.sinhViênToolStripMenuItem2.Name = "sinhViênToolStripMenuItem2";
-            this.sinhViênToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.sinhViênToolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
             this.sinhViênToolStripMenuItem2.Text = "Sinh viên";
             this.sinhViênToolStripMenuItem2.Click += new System.EventHandler(this.sinhViênToolStripMenuItem2_Click);
             // 
             // MonToolStripMenuItem
             // 
             this.MonToolStripMenuItem.Name = "MonToolStripMenuItem";
-            this.MonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.MonToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.MonToolStripMenuItem.Text = "Môn học";
             this.MonToolStripMenuItem.Click += new System.EventHandler(this.MonToolStripMenuItem_Click);
             // 
             // lớpToolStripMenuItem
             // 
             this.lớpToolStripMenuItem.Name = "lớpToolStripMenuItem";
-            this.lớpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lớpToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.lớpToolStripMenuItem.Text = "Lớp học";
             this.lớpToolStripMenuItem.Click += new System.EventHandler(this.lớpToolStripMenuItem_Click);
             // 
@@ -111,21 +111,21 @@ namespace QuanLySinhVien
             // mônHọcToolStripMenuItem
             // 
             this.mônHọcToolStripMenuItem.Name = "mônHọcToolStripMenuItem";
-            this.mônHọcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mônHọcToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.mônHọcToolStripMenuItem.Text = "Môn học";
             this.mônHọcToolStripMenuItem.Click += new System.EventHandler(this.mônHọcToolStripMenuItem_Click);
             // 
             // sinhViênToolStripMenuItem1
             // 
             this.sinhViênToolStripMenuItem1.Name = "sinhViênToolStripMenuItem1";
-            this.sinhViênToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sinhViênToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.sinhViênToolStripMenuItem1.Text = "Sinh viên";
             this.sinhViênToolStripMenuItem1.Click += new System.EventHandler(this.sinhViênToolStripMenuItem1_Click);
             // 
             // mônToolStripMenuItem
             // 
             this.mônToolStripMenuItem.Name = "mônToolStripMenuItem";
-            this.mônToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mônToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.mônToolStripMenuItem.Text = "Lớp";
             this.mônToolStripMenuItem.Click += new System.EventHandler(this.mônToolStripMenuItem_Click);
             // 
@@ -140,7 +140,7 @@ namespace QuanLySinhVien
             // XemDiemToolStripMenuItem
             // 
             this.XemDiemToolStripMenuItem.Name = "XemDiemToolStripMenuItem";
-            this.XemDiemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.XemDiemToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.XemDiemToolStripMenuItem.Text = "Kết quả học tập";
             this.XemDiemToolStripMenuItem.Click += new System.EventHandler(this.XemDiemToolStripMenuItem_Click);
             // 
@@ -157,6 +157,7 @@ namespace QuanLySinhVien
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sinh viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -82,5 +82,27 @@ namespace QuanLySinhVien
             frm.ShowDialog();
             frm.Show();
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            switch (DangNhap.Quyen)
+            {
+                case 1:
+                    this.quảnTrịViênToolStripMenuItem.Enabled = true;
+                    this.giảngViênToolStripMenuItem.Enabled = false;
+                    this.sinhViênToolStripMenuItem.Enabled = false;
+                    break;
+                case 2:
+                    this.quảnTrịViênToolStripMenuItem.Enabled = false;
+                    this.giảngViênToolStripMenuItem.Enabled = true;
+                    this.sinhViênToolStripMenuItem.Enabled = false;
+                    break;
+                case 3:
+                    this.quảnTrịViênToolStripMenuItem.Enabled = false;
+                    this.giảngViênToolStripMenuItem.Enabled = false;
+                    this.sinhViênToolStripMenuItem.Enabled = true;
+                    break;
+            }
+        }
     }
 }
