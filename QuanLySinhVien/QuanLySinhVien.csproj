@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,79 +73,97 @@
     <Compile Include="Data\Quyen.cs" />
     <Compile Include="Data\SinhVien.cs" />
     <Compile Include="Data\TaiKhoan.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCrudGV.cs">
+    <Compile Include="Forms\FrmCrudGV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCrudGV.Designer.cs">
+    <Compile Include="Forms\FrmCrudGV.Designer.cs">
       <DependentUpon>FrmCrudGV.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCrudMonHoc.cs">
+    <Compile Include="Forms\FrmCrudLop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCrudMonHoc.Designer.cs">
+    <Compile Include="Forms\FrmCrudLop.Designer.cs">
+      <DependentUpon>FrmCrudLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCrudMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCrudMonHoc.Designer.cs">
       <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCrudSV.cs">
+    <Compile Include="Forms\FrmCrudSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCrudSV.Designer.cs">
+    <Compile Include="Forms\FrmCrudSV.Designer.cs">
       <DependentUpon>FrmCrudSV.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLop_GV.cs">
+    <Compile Include="Forms\FrmLop_GV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLop_GV.Designer.cs">
+    <Compile Include="Forms\FrmLop_GV.Designer.cs">
       <DependentUpon>FrmLop_GV.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMain.cs">
+    <Compile Include="Forms\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.cs">
+    <Compile Include="Forms\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMonHoc.cs">
+    <Compile Include="Forms\FrmMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMonHoc.Designer.cs">
+    <Compile Include="Forms\FrmMonHoc.Designer.cs">
       <DependentUpon>FrmMonHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSinhVien_GV.cs">
+    <Compile Include="Forms\FrmSinhVien_GV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSinhVien_GV.Designer.cs">
+    <Compile Include="Forms\FrmSinhVien_GV.Designer.cs">
       <DependentUpon>FrmSinhVien_GV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmThongKe.Designer.cs">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCrudGV.resx">
+    <EmbeddedResource Include="Forms\FrmCrudGV.resx">
       <DependentUpon>FrmCrudGV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCrudMonHoc.resx">
+    <EmbeddedResource Include="Forms\FrmCrudLop.resx">
+      <DependentUpon>FrmCrudLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCrudMonHoc.resx">
       <DependentUpon>FrmCrudMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCrudSV.resx">
+    <EmbeddedResource Include="Forms\FrmCrudSV.resx">
       <DependentUpon>FrmCrudSV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLop_GV.resx">
+    <EmbeddedResource Include="Forms\FrmLop_GV.resx">
       <DependentUpon>FrmLop_GV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMain.resx">
+    <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMonHoc.resx">
+    <EmbeddedResource Include="Forms\FrmMonHoc.resx">
       <DependentUpon>FrmMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSinhVien_GV.resx">
+    <EmbeddedResource Include="Forms\FrmSinhVien_GV.resx">
       <DependentUpon>FrmSinhVien_GV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmThongKe.resx">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,13 +184,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLySinhVien.bak" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
