@@ -64,8 +64,7 @@ namespace QuanLySinhVien
             // 
             this.btnXem.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.btnXem.Location = new System.Drawing.Point(369, 26);
+            this.btnXem.Location = new System.Drawing.Point(311, 22);
             this.btnXem.Margin = new System.Windows.Forms.Padding(4);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(75, 28);
@@ -85,14 +84,12 @@ namespace QuanLySinhVien
             this.ColMaMon,
             this.ColTenMon,
             this.ColSoTC});
-
-            this.dgvMon.Location = new System.Drawing.Point(39, 68);
+            this.dgvMon.Location = new System.Drawing.Point(27, 71);
             this.dgvMon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
             this.dgvMon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dgvMon.Size = new System.Drawing.Size(431, 230);
-
+            this.dgvMon.Size = new System.Drawing.Size(737, 216);
             this.dgvMon.TabIndex = 3;
             // 
             // ColMaMon
@@ -123,9 +120,7 @@ namespace QuanLySinhVien
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Crimson;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.btnThoat.Location = new System.Drawing.Point(350, 322);
-
+            this.btnThoat.Location = new System.Drawing.Point(703, 322);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(61, 24);
             this.btnThoat.TabIndex = 4;
@@ -138,20 +133,17 @@ namespace QuanLySinhVien
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(487, 297);
+            this.ClientSize = new System.Drawing.Size(793, 371);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dgvMon);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbKhoa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-
             this.Margin = new System.Windows.Forms.Padding(4);
-
             this.Name = "FrmMonHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Môn học";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).EndInit();
             this.ResumeLayout(false);

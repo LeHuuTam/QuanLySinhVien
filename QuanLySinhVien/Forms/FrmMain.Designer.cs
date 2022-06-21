@@ -41,7 +41,6 @@ namespace QuanLySinhVien
             this.sinhViênToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mônToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.XemDiemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -133,23 +132,17 @@ namespace QuanLySinhVien
             // sinhViênToolStripMenuItem
             // 
             this.sinhViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lopToolStripMenuItem1,
             this.XemDiemToolStripMenuItem});
             this.sinhViênToolStripMenuItem.Name = "sinhViênToolStripMenuItem";
             this.sinhViênToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.sinhViênToolStripMenuItem.Text = "Sinh viên";
             // 
-            // lopToolStripMenuItem1
-            // 
-            this.lopToolStripMenuItem1.Name = "lopToolStripMenuItem1";
-            this.lopToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.lopToolStripMenuItem1.Text = "Lớp học";
-            // 
             // XemDiemToolStripMenuItem
             // 
             this.XemDiemToolStripMenuItem.Name = "XemDiemToolStripMenuItem";
             this.XemDiemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.XemDiemToolStripMenuItem.Text = "Xem điểm";
+            this.XemDiemToolStripMenuItem.Text = "Kết quả học tập";
+            this.XemDiemToolStripMenuItem.Click += new System.EventHandler(this.XemDiemToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -180,7 +173,6 @@ namespace QuanLySinhVien
         private System.Windows.Forms.ToolStripMenuItem sinhViênToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mônToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sinhViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lopToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem XemDiemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giảngViênToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sinhViênToolStripMenuItem2;

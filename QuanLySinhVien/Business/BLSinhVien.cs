@@ -26,6 +26,10 @@ namespace QuanLySinhVien.Business
         {
             return db.SinhViens.Where(x => x.MaSV == maSV).FirstOrDefault();
         }
+        public SinhVien LaySinhVienTheoTenDN(string tenDN)
+        {
+            return db.SinhViens.Where(x => x.TenDangNhap == tenDN).FirstOrDefault();
+        }
         public List<SinhVien> TimSinhVien(string text)
         {
             return db.SinhViens.Where(x => x.MaSV.Contains(text)

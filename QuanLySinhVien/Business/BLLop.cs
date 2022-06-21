@@ -18,6 +18,10 @@ namespace QuanLySinhVien.Business
         {
             return db.Lops.Where(x => x.MaMon == maMon).ToList();
         }
+        public List<Lop> LayLop()
+        {
+            return db.Lops.ToList();
+        }
         public List<Lop> LayLopTheoGV(string maGV)
         {
             return db.Lops.Where(x => x.MaGV == maGV).ToList();

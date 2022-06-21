@@ -12,6 +12,7 @@ namespace QuanLySinhVien
 {
     public partial class FrmMain : Form
     {
+
         public FrmMain()
         {
             InitializeComponent();
@@ -72,6 +73,14 @@ namespace QuanLySinhVien
             this.Hide();
             frm.ShowDialog();
             this.Show();
+        }
+
+        private void XemDiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDiem_SV frm = new FrmDiem_SV();
+            this.Hide();
+            frm.ShowDialog();
+            frm.Show();
         }
     }
 }

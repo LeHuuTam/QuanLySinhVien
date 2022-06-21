@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLySinhVien.Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,9 +58,21 @@ namespace QuanLySinhVien
 
         }
 
-        private void dgvMon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FrmCrudLop_Load(object sender, EventArgs e)
         {
-
+            BLLop bll = new BLLop();
+            List<object> list = new List<object>();
+            foreach (var i in bll.LayLop())
+            {
+                list.Add(new
+                {
+                    MaLop = i.MaLop,
+                    Mon = i.MonHoc.TenMon,
+                    GiangVien = i.GiangVien.HoTen,
+                    Khoa = i.MonHoc.Khoa
+                });
+            }
+            dgvLop.DataSource = list;
         }
     }
 }

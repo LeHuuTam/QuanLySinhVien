@@ -42,7 +42,6 @@ namespace QuanLySinhVien
                 DangNhap.Quyen = tk.Quyen;
                 DangNhap.TenDN = txbTenDN.Text.Trim();
 
-
                 FrmMain frm = new FrmMain();
                 this.Hide();
                 frm.ShowDialog();

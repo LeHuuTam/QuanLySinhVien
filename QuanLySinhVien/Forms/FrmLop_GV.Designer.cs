@@ -40,7 +40,6 @@ namespace QuanLySinhVien
             this.label1 = new System.Windows.Forms.Label();
             this.cbMon = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnFile = new System.Windows.Forms.Button();
             this.txbGK = new System.Windows.Forms.TextBox();
@@ -54,7 +53,6 @@ namespace QuanLySinhVien
             this.cbLop = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvDSSV = new System.Windows.Forms.DataGridView();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_Gender = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -63,6 +61,8 @@ namespace QuanLySinhVien
             this.Col_GiuaKi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_CuoiKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLop)).BeginInit();
@@ -79,7 +79,7 @@ namespace QuanLySinhVien
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(825, 393);
+            this.tabControl1.Size = new System.Drawing.Size(864, 433);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -110,7 +110,6 @@ namespace QuanLySinhVien
             // 
             // dgvDSLop
             // 
-            this.dgvDSLop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSLop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -129,6 +128,7 @@ namespace QuanLySinhVien
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 179;
             // 
             // Column2
             // 
@@ -137,6 +137,7 @@ namespace QuanLySinhVien
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 179;
             // 
             // Column3
             // 
@@ -145,6 +146,7 @@ namespace QuanLySinhVien
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 179;
             // 
             // label1
             // 
@@ -182,20 +184,10 @@ namespace QuanLySinhVien
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(817, 367);
+            this.tabPage2.Size = new System.Drawing.Size(856, 407);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Điểm";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(762, 411);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 3;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnThongKe
             // 
@@ -345,7 +337,7 @@ namespace QuanLySinhVien
             this.dgvDSSV.Name = "dgvDSSV";
             this.dgvDSSV.RowHeadersWidth = 51;
             this.dgvDSSV.RowTemplate.Height = 24;
-            this.dgvDSSV.Size = new System.Drawing.Size(766, 224);
+            this.dgvDSSV.Size = new System.Drawing.Size(846, 260);
             this.dgvDSSV.TabIndex = 0;
             this.dgvDSSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSSV_CellClick);
             // 
@@ -422,18 +414,27 @@ namespace QuanLySinhVien
             this.TB.Name = "TB";
             this.TB.Width = 60;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(801, 451);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // FrmLop_GV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(849, 444);
+            this.ClientSize = new System.Drawing.Size(888, 486);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLop_GV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lớp";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmLop_GV_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
