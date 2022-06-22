@@ -40,6 +40,7 @@ namespace QuanLySinhVien
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +103,7 @@ namespace QuanLySinhVien
             this.Column2,
             this.Column3,
             this.Column4,
+            this.Column6,
             this.Column5});
             this.dgvKetQua.Location = new System.Drawing.Point(35, 108);
             this.dgvKetQua.Name = "dgvKetQua";
@@ -142,17 +144,25 @@ namespace QuanLySinhVien
             this.Column4.HeaderText = "Điểm cuối kỳ";
             this.Column4.Name = "Column4";
             // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Tb";
+            this.Column6.HeaderText = "Điểm trung bình";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
             // Column5
             // 
             this.Column5.DataPropertyName = "KetQua";
             this.Column5.HeaderText = "Kết quả";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // FrmDiem_SV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 423);
+            this.ClientSize = new System.Drawing.Size(719, 423);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dgvKetQua);
             this.Controls.Add(this.label3);
@@ -183,6 +193,7 @@ namespace QuanLySinhVien
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column5;
     }
 }

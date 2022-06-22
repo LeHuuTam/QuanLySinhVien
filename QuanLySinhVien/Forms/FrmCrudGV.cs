@@ -109,7 +109,7 @@ namespace QuanLySinhVien
         {
             if (textBox_MaGV.Text == "")
             {
-                MessageBox.Show("Vui lòng chọn sinh viên để xoá");
+                MessageBox.Show("Vui lòng chọn giảng viên để xoá");
             }
             else
             {

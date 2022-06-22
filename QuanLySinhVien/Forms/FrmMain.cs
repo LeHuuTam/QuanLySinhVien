@@ -80,7 +80,7 @@ namespace QuanLySinhVien
             FrmDiem_SV frm = new FrmDiem_SV();
             this.Hide();
             frm.ShowDialog();
-            frm.Show();
+            this.Show();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)

@@ -26,6 +26,27 @@ namespace QuanLySinhVien.Business
         {
             return db.Lops.Where(x => x.MaGV == maGV).ToList();
         }
+        public bool ThemLop(string maLop, string maMon, DateTime ngayBD, DateTime ngayKT, string maGV)
+        {
+            try
+            {
+                var lop = new Lop()
+                {
+                    MaGV = maGV,
+                    MaLop = maLop,
+                    MaMon = maMon,
+                    NgayBatDau = ngayBD,
+                    NgayKetThuc = ngayKT
+                };
+                db.Lops.Add(lop);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public bool XoaGVLop(string maGV)
         {
             try

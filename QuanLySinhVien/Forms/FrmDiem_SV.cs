@@ -40,7 +40,9 @@ namespace QuanLySinhVien
                     Lop = i.MaLop,
                     Mon = i.Lop.MonHoc.TenMon,
                     Gk = i.DiemQuaTrinh,
-                    Ck = i.DiemCuoiKy
+                    Ck = i.DiemCuoiKy,
+                    Tb = (i.DiemCuoiKy + i.DiemQuaTrinh) / 2,
+                    KetQua = i.DiemCuoiKy + i.DiemQuaTrinh >= 10
                 });
             }
             this.dgvKetQua.DataSource = ketqua;
